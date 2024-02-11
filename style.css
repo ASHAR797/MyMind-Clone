@@ -1001,9 +1001,19 @@ footer {
     }
 
     .background-box {
-        width: 148vw;
-        height: 42em;
-        top: 81px;
+            width: 90vw;
+            height: 24em;
+            top: 81px;
+    }
+    .background-box::before{
+        content: "";
+    position: absolute;
+    z-index: -85px;
+    inset: 0px;
+    transform: translate(10px, 8px);
+    background: linear-gradient(to right, #FCB75A, #FD9DA1);
+    filter: blur(80px);
+    border-radius: 50%;
     }
 
     .sec-1-first-container h1 {
